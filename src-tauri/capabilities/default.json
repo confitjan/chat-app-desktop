@@ -2,9 +2,22 @@
   "$schema": "../gen/schemas/desktop-schema.json",
   "identifier": "default",
   "description": "Capability for the main window",
-  "windows": ["main"],
+  "windows": [
+    "main"
+  ],
+  "remote": {
+    "urls": [
+      "https://oomfie.club"
+    ]
+  },
   "permissions": [
     "core:default",
-    "opener:default"
+    "opener:default",
+    "core:window:allow-set-badge-count",
+    "core:window:allow-set-badge-label",
+    "core:window:allow-set-overlay-icon",
+    "core:resources:default",
+    "fs:read-all",
+    "fs:default"
   ]
 }

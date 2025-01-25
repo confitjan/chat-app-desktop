@@ -1,6 +1,6 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "oomfie-club-desktop",
+  "productName": "oomfie club",
   "version": "0.1.0",
   "identifier": "com.oomfie-club-desktop.app",
   "build": {
@@ -13,7 +13,8 @@
         "title": "Oomfie Club",
         "width": 728,
         "height": 486,
-	"decorations": false
+        "url": "https://oomfie.club",
+        "dragDropEnabled": false
       }
     ],
     "security": {
@@ -25,6 +26,20 @@
     "targets": "all",
     "icon": [
       "icons/icon.ico"
-    ]
+    ],
+    "resources": [
+      "resources/*"
+    ],
+    "windows": {
+      "wix": {
+        "dialogImagePath": "icons/wix.bmp",
+        "bannerPath": "icons/bg.bmp",
+        "language": {
+          "en-US": {
+            "localePath": "wix/test.wxl"
+          }
+        }
+      }
+    }
   }
 }
